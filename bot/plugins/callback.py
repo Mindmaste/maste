@@ -81,7 +81,7 @@ async def cb_navg(bot, update: CallbackQuery):
 
     if ((index_val + 1 )== max_pages) or ((index_val + 1) == len(results)): # Max Pages
         temp_results.append([
-            InlineKeyboardButton("⏪ Back", callback_data=f"navigate({index_val}|back|{query})")
+            InlineKeyboardButton(" «« Back", callback_data=f"navigate({index_val}|back|{query})")
         ])
 
     elif int(index_val) == 0:
@@ -89,13 +89,13 @@ async def cb_navg(bot, update: CallbackQuery):
 
     else:
         temp_results.append([
-            InlineKeyboardButton("⏪ Back", callback_data=f"navigate({index_val}|back|{query})"),
-            InlineKeyboardButton("Next ⏩", callback_data=f"navigate({index_val}|next|{query})")
+            InlineKeyboardButton("«« Back", callback_data=f"navigate({index_val}|back|{query})"),
+            InlineKeyboardButton("Next »» ", callback_data=f"navigate({index_val}|next|{query})")
         ])
 
     if not int(index_val) == 0:    
         temp_results.append([
-            InlineKeyboardButton(f"🔰 Page {index_val + 1}/{len(results) if len(results) < max_pages else max_pages} 🔰", callback_data="ignore")
+            InlineKeyboardButton(f"📄 Page {index_val + 1}/{len(results) if len(results) < max_pages else max_pages} 📄", callback_data="ignore")
         ])
     
     if show_invite and int(index_val) !=0 :
@@ -1601,14 +1601,14 @@ async def cb_about(bot, update: CallbackQuery):
     text=f"<i><u>Bot's Status</u></i>\n"
     text+=f"\n<b><i>Bot's Uptime:</i></b> <code>{time_formatter(time.time() - start_uptime)}</code>\n"
     text+=f"\n<b><i>Bot Funtion:</i></b> <i>Pro Auto File Filter Bot</i>\n"
-    text+=f"""\n<b><i>Bot Support:</i></b> <a href="https://t.me/Mo_TECH_YT">MoTechYT</a>\n"""
-    text+="""\n<b><i>Source Code:</i></b> <a href="https://github.com/MRK_YT/Pro-Auto-Filter-Bot">Source</a>"""
+    text+=f"""\n<b><i>Bot Support:</i></b> <a href="https://t.me/mkv_group">mkvrockers</a>\n"""
+    text+="""\n<b><i>Creator:</i></b> <a href="https://t.me/Thalapathy_off">Click me</a>"""
 
     buttons = [
         [
             InlineKeyboardButton
                 (
-                    "My Dev ⚡", url="https://t.me/MRK_YT"
+                    "My Dev ⚡", url="https://t.me/Thalapathy_off"
                 ),
                 
             InlineKeyboardButton
