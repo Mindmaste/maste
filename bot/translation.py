@@ -11,9 +11,8 @@ class Translation(object):
 <b>Just Add Me To Your Group And Channel And Connect Them And See My Pevers 🔥🔥😝</b>
 
 
-    HELP_TEXT = """
-<b><i><u>How To Use Me!?</u></i></b>
-<i>
+    HELP_TEXT = """ 
+<b><i><u>How To Use Me!?</u></i></b><i>
 -> Add Me To Any Group And Make Me Admin
 -> Add Me To Your Desired Channel
 </i>
